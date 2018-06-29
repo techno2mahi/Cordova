@@ -4,6 +4,9 @@
         <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
         <param name="onload" value="true" />
     </feature>
+    <feature name="Contacts">
+        <param name="android-package" value="org.apache.cordova.contacts.ContactManager" />
+    </feature>
     <name>My First mobile App</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
@@ -22,4 +25,5 @@
     <hook src="scripts/prepareAngular2App.js" type="before_prepare" />
     <allow-intent href="market:*" />
     <preference name="loglevel" value="DEBUG" />
+    <preference name="loadUrlTimeoutValue" value="700000" />
 </widget>

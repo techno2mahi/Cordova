@@ -9,6 +9,9 @@
   "installed_plugins": {
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "ch.mycompany.mobapp"
+    },
+    "cordova-plugin-contacts": {
+      "PACKAGE_NAME": "ch.mycompany.mobapp"
     }
   },
   "dependent_plugins": {}

@@ -1,13 +1,13 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\dev\vagrant-ubuntu-xenial-node-8-master\MobApp\cordova\platforms\android\app\src\main\AndroidManifest.xml:2:1-14:12
-INJECTED from C:\dev\vagrant-ubuntu-xenial-node-8-master\MobApp\cordova\platforms\android\app\src\main\AndroidManifest.xml:2:1-14:12
-INJECTED from C:\dev\vagrant-ubuntu-xenial-node-8-master\MobApp\cordova\platforms\android\app\src\main\AndroidManifest.xml:2:1-14:12
-INJECTED from C:\dev\vagrant-ubuntu-xenial-node-8-master\MobApp\cordova\platforms\android\app\src\main\AndroidManifest.xml:2:1-14:12
+ADDED from C:\dev\vagrant-ubuntu-xenial-node-8-master\MobApp\cordova\platforms\android\app\src\main\AndroidManifest.xml:2:1-17:12
+INJECTED from C:\dev\vagrant-ubuntu-xenial-node-8-master\MobApp\cordova\platforms\android\app\src\main\AndroidManifest.xml:2:1-17:12
+INJECTED from C:\dev\vagrant-ubuntu-xenial-node-8-master\MobApp\cordova\platforms\android\app\src\main\AndroidManifest.xml:2:1-17:12
+INJECTED from C:\dev\vagrant-ubuntu-xenial-node-8-master\MobApp\cordova\platforms\android\app\src\main\AndroidManifest.xml:2:1-17:12
 MERGED from [:CordovaLib] C:\dev\vagrant-ubuntu-xenial-node-8-master\MobApp\cordova\platforms\android\CordovaLib\build\intermediates\manifests\full\debug\AndroidManifest.xml:20:1-27:12
-INJECTED from C:\dev\vagrant-ubuntu-xenial-node-8-master\MobApp\cordova\platforms\android\app\src\main\AndroidManifest.xml:2:1-14:12
-INJECTED from C:\dev\vagrant-ubuntu-xenial-node-8-master\MobApp\cordova\platforms\android\app\src\main\AndroidManifest.xml:2:1-14:12
-INJECTED from C:\dev\vagrant-ubuntu-xenial-node-8-master\MobApp\cordova\platforms\android\app\src\main\AndroidManifest.xml:2:1-14:12
+INJECTED from C:\dev\vagrant-ubuntu-xenial-node-8-master\MobApp\cordova\platforms\android\app\src\main\AndroidManifest.xml:2:1-17:12
+INJECTED from C:\dev\vagrant-ubuntu-xenial-node-8-master\MobApp\cordova\platforms\android\app\src\main\AndroidManifest.xml:2:1-17:12
+INJECTED from C:\dev\vagrant-ubuntu-xenial-node-8-master\MobApp\cordova\platforms\android\app\src\main\AndroidManifest.xml:2:1-17:12
 	package
 		ADDED from C:\dev\vagrant-ubuntu-xenial-node-8-master\MobApp\cordova\platforms\android\app\src\main\AndroidManifest.xml:2:102-131
 		INJECTED from C:\dev\vagrant-ubuntu-xenial-node-8-master\MobApp\cordova\platforms\android\app\src\main\AndroidManifest.xml
@@ -86,3 +86,15 @@ MERGED from [:CordovaLib] C:\dev\vagrant-ubuntu-xenial-node-8-master\MobApp\cord
 		ADDED from C:\dev\vagrant-ubuntu-xenial-node-8-master\MobApp\cordova\platforms\android\app\src\main\AndroidManifest.xml:13:42-71
 	android:minSdkVersion
 		ADDED from C:\dev\vagrant-ubuntu-xenial-node-8-master\MobApp\cordova\platforms\android\app\src\main\AndroidManifest.xml:13:15-41
+uses-permission#android.permission.READ_CONTACTS
+ADDED from C:\dev\vagrant-ubuntu-xenial-node-8-master\MobApp\cordova\platforms\android\app\src\main\AndroidManifest.xml:14:5-72
+	android:name
+		ADDED from C:\dev\vagrant-ubuntu-xenial-node-8-master\MobApp\cordova\platforms\android\app\src\main\AndroidManifest.xml:14:22-69
+uses-permission#android.permission.WRITE_CONTACTS
+ADDED from C:\dev\vagrant-ubuntu-xenial-node-8-master\MobApp\cordova\platforms\android\app\src\main\AndroidManifest.xml:15:5-73
+	android:name
+		ADDED from C:\dev\vagrant-ubuntu-xenial-node-8-master\MobApp\cordova\platforms\android\app\src\main\AndroidManifest.xml:15:22-70
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from C:\dev\vagrant-ubuntu-xenial-node-8-master\MobApp\cordova\platforms\android\app\src\main\AndroidManifest.xml:16:5-71
+	android:name
+		ADDED from C:\dev\vagrant-ubuntu-xenial-node-8-master\MobApp\cordova\platforms\android\app\src\main\AndroidManifest.xml:16:22-68
