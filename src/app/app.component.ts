@@ -1,35 +1,22 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, OnInit } from "@angular/core";
+import { ContactService } from "./_services/contact.service";
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: "app-root",
+  templateUrl: "./app.component.html",
+  styleUrls: ["./app.component.css"]
 })
 export class AppComponent implements OnInit {
-  title = 'app';
+  title = "app";
+  constructor(private contactService: ContactService) {}
 
   ngOnInit() {
-    document.addEventListener('deviceready', this.onDeviceReady, false);
+    document.addEventListener("deviceready", this.onDeviceReady, false);
   }
 
   //https://www.raymondcamden.com/2014/07/09/Cordova-Plugin-update-and-new-Contacts-demo
   public onDeviceReady() {
-    alert('Device Ready');
-    //cls
-  //  alert(navigator.contacts);
-    console.log(navigator);
-
-  var fields = [navigator.contacts.fieldType.displayName, navigator.contacts.fieldType.phoneNumbers ]
-    navigator.contacts.find(fields, function(contacts){
-         alert(contacts.length)
-      },function(err){
-        console.log('Error: ' + err);
-      },
-    {
-      filter: "mahi", multiple: true
-    });
-
-
+    alert("Device Ready");
+    this.contactService.initContact();
+     
   }
-
 }
