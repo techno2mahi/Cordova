@@ -1,5 +1,7 @@
 import { Component, OnInit } from "@angular/core";
-import { ContactService } from "./_services/contact.service";
+ declare var cordova;
+declare var navigator; 
+//import { ContactService } from "./_services/contact.service";
 @Component({
   selector: "app-root",
   templateUrl: "./app.component.html",
@@ -7,7 +9,7 @@ import { ContactService } from "./_services/contact.service";
 })
 export class AppComponent implements OnInit {
   title = "app";
-  constructor(private contactService: ContactService) {}
+  //constructor(private contactService: ContactService) {}
 
   ngOnInit() {
     document.addEventListener("deviceready", this.onDeviceReady, false);
@@ -16,7 +18,11 @@ export class AppComponent implements OnInit {
   //https://www.raymondcamden.com/2014/07/09/Cordova-Plugin-update-and-new-Contacts-demo
   public onDeviceReady() {
     alert("Device Ready");
-    this.contactService.initContact();
+    //this.contactService.initContact();
+     alert(navigator.languages) ;
+     alert(navigator.contacts) ;
+    // navigator.contacts.find([navigator.contacts.fieldType.displayName,navigator.contacts.fieldType.phoneNumbers], function(contacts) {alert(contacts.length);},function(){}, {filter: "mahi", multiple: true})
+     navigator.contacts.find(["displayName","phoneNumbers"], function(contacts) {alert(contacts.length);},function(){}, {filter: "mahi", multiple: true})
      
   }
 }
