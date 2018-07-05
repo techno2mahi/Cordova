@@ -1,7 +1,6 @@
 // import { Injectable } from "@angular/core";
 // declare var ContactPlugin;
-// declare var cordova
-// declare var navigator;
+ 
 // @Injectable()
 // export class ContactService {
 //   public pushtoken: any;
