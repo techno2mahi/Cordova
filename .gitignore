@@ -8,6 +8,7 @@
 
 # dependencies
 /node_modules
+/cordova/platforms
 
 # IDEs and editors
 /.idea
@@ -43,3 +44,6 @@ testem.log
 .DS_Store
 Thumbs.db
 package-lock.json
+cordova/node_modules/
+cordova/plugins/
+cordova/res/
