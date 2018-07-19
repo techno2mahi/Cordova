@@ -21,13 +21,7 @@
         "plugins": {
             "cordova-plugin-whitelist": {},
             "cordova-plugin-contacts": {},
-            "cordova-plugin-inappbrowser": {},
-            "cordova-plugin-googleplus": {
-                "REVERSED_CLIENT_ID": "com.googleusercontent.apps.24899772216-onrb1qenmgqrs54oj1igredgno1c043j",
-                "WEB_APPLICATION_CLIENT_ID": "124899772216-onrb1qenmgqrs54oj1igredgno1c043j.apps.googleusercontent.com",
-                "REVERSED_CLIENT_ID1": "com.googleusercontent.apps.24899772216-onrb1qenmgqrs54oj1igredgno1c043j",
-                "WEB_APPLICATION_CLIENT_ID1": "124899772216-onrb1qenmgqrs54oj1igredgno1c043j.apps.googleusercontent.com"
-            }
+            "cordova-plugin-inappbrowser": {}
         },
         "platforms": [
             "browser",
