@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>MobApp</title>
@@ -7,16 +8,15 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <script src="cordova.js"></script>
+  <script type="text/javascript" src="cordova.js"></script>
   <script type="text/javascript">
 
-    function GoogleLogin1()
-    {
+    function GoogleLogin() {
       window.plugins.googleplus.login(
         {
-          'scopes': 'profile,email', // optional, space-separated list of scopes, If not included or empty, defaults to `profile` and `email`.
-          'webClientId': '124899772216-onrb1qenmgqrs54oj1igredgno1c043j.apps.googleusercontent.com', // optional clientId of your Web application from Credentials settings of your project - On Android, this MUST be included to get an idToken. On iOS, it is not required.
-          'offline': true, // optional, but requires the webClientId - if set to true the plugin will also return a serverAuthCode, which can be used to grant offline access to a non-Google server
+          // 'scopes': ['profile', 'email', 'me'], // optional, space-separated list of scopes, If not included or empty, defaults to `profile` and `email`.
+          // 'webClientId': '124899772216-ekppk4nflm4m57abbepc3vhdktote3gb.apps.googleusercontent.com',  // web '124899772216-onrb1qenmgqrs54oj1igredgno1c043j.apps.googleusercontent.com', // optional clientId of your Web application from Credentials settings of your project - On Android, this MUST be included to get an idToken. On iOS, it is not required.
+          //'offline': true, // optional, but requires the webClientId - if set to true the plugin will also return a serverAuthCode, which can be used to grant offline access to a non-Google server
         },
         function (obj) {
           alert(JSON.stringify(obj)); // do something useful instead of alerting
@@ -27,10 +27,39 @@
         }
       );
     }
-  
-  </script> 
+
+    function GoogleSilentLogin() {
+      window.plugins.googleplus.trySilentLogin(
+        {
+          'scopes': '', // optional - space-separated list of scopes, If not included or empty, defaults to `profile` and `email`.
+          'webClientId': '124899772216-ekppk4nflm4m57abbepc3vhdktote3gb.apps.googleusercontent.com', // optional - clientId of your Web application from Credentials settings of your project - On Android, this MUST be included to get an idToken. On iOS, it is not required.
+          'offline': true, // Optional, but requires the webClientId - if set to true the plugin will also return a serverAuthCode, which can be used to grant offline access to a non-Google server
+        },
+        function (obj) {
+          alert(JSON.stringify(obj)); // do something useful instead of alerting
+        },
+        function (msg) {
+          alert('error: ' + msg);
+        }
+      );
+    }
+
+    function FacebookLogin() {
+
+      facebookConnectPlugin.login(["public_profile"],
+        function (userData) {
+          alert("UserInfo: " + JSON.stringify(userData));
+        },
+        function (error) { 
+          alert(" ERROR " + JSON.stringify(error)) }
+      );
+    }
+
+  </script>
 </head>
+
 <body>
   <app-root></app-root>
 </body>
+
 </html>
